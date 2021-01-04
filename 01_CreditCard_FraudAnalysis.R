@@ -20,7 +20,7 @@ glimpse(creditcard_data)
 table(creditcard_data$Class)
 summary(creditcard_data)
 
-set.seed(seed = 1113)
+set.seed(seed = 1000)
 split_obj <- rsample::initial_split(creditcard_data, prop = 0.80)
 split_obj %>% training()
 split_obj %>% testing()
