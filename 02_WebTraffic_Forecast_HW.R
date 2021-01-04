@@ -1,17 +1,17 @@
 library(googleAnalyticsR)
 library(googleAuthR)
 
-viewid<-149406111
+viewid<-xxxxxxxxx
 start_date<-"2017-05-01"
 end_date<-"2020-12-30"
 
 df2 <- google_analytics_4(viewid, date_range = c(start_date, end_date),metrics = c("sessions"),dimensions = c("yearMonth"))
 df2 <- google_analytics_4(viewid, date_range = c(start_date, end_date),metrics = c("sessions"),dimensions = c("yearMonth", "channelgrouping"))   #filter organic traffic
 
-write.csv(df2, file="C:/Users/ZBFZHR/Desktop/Tidytuesday/datasets/sessions.csv", row.names=FALSE)  
+write.csv(df2, file="C:/Users/Desktop/datasets/sessions.csv", row.names=FALSE)  
 #filter organic and import
 
-sessions <- read.csv("C:/Users/ZBFZHR/Desktop/Tidytuesday/datasets/sessions.csv")
+sessions <- read.csv("C:/Users/Desktop/datasets/sessions.csv")
 df<-sessions
 
 head(df, n=10)
