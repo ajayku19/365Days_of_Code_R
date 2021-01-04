@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # Importing the dataset
-dataset = read.csv('C:/Users/ZBFZHR/Desktop/Python-learn/Dailycode/Position_Salaries.csv')
+dataset = read.csv('Position_Salaries.csv') 
 dataset = dataset[2:3]
 
 head(dataset)
