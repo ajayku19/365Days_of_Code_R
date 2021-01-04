@@ -14,7 +14,7 @@ library(yardstick)
 # Plotting Decision Trees
 #library(rpart.plot)
 
-creditcard_data <- read_csv("C:/Users/ZBFZHR/Desktop/Tidytuesday/datasets/creditcard.csv")
+creditcard_data <- read_csv("C:/Users/Desktop/datasets/creditcard.csv")
 glimpse(creditcard_data)
 
 table(creditcard_data$Class)
